@@ -105,7 +105,10 @@ padding-right: 400px;
   margin-top: -20px;
 }
 .li-c{
-  font-size:small;
+  font-size:98%;
+}
+.li-c:hover{
+  color: red;
 }
 .nav-c{
   font-size:medium;
