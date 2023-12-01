@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Company Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/e81773e2de.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/images/toyota.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-transparent navbar-dark fixed-top">
+            <a class="navbar-brand ms-lg-4 me-lg-4" href="#"><img class="img-fluid"
+                    src="images/Logo-Toyota-Lets-Go-Beyond.png" id="toyota" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-c d-flex justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Toyota Electrified</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gazoo Racing</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle nav-link border-opacity-0 rounded-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop Now
+                            </button>
+                            <ul class="dropdown-menu text-start">
+                                <li><a class="dropdown-item fw-bold li-c" href="#">Toyota Live Showroom</a></li>
+                                <li><a class="dropdown-item fw-bold li-c" href="#">Find Dealer</a></li>
+                                <li><a class="dropdown-item fw-bold li-c" href="#">Trade In</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle nav-link border-opacity-0 rounded-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                OwnerShip
+                            </button>
+                            <ul class="dropdown-menu text-start">
+                                <li><a class="dropdown-item fw-bold li-c" href="#" onmouseover="showmore()"><i
+                                            class="fa-solid fa-microchip me-2"></i>Technology</a></li>
+                                <li><a class="dropdown-item fw-bold li-c" href="#">Aftersales</a></li>
+                                <li><a class="dropdown-item fw-bold li-c" href="#">T-intouch</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle nav-link border-opacity-0 rounded-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </button>
+                            <ul class="dropdown-menu text-start">
+                                <li><a class="dropdown-item fw-bold li-c" href="#"><i
+                                            class="fa-solid fa-building me-2"></i>Corporate</a></li>
+                                <li><a class="dropdown-item fw-bold li-c" href="#"><i
+                                            class="fa-solid fa-newspaper me-2"></i>Pressroom</a></li>
+                                <li><a class="dropdown-item fw-bold li-c" href="#"><i
+                                            class="fa-regular fa-compass me-2"></i>Discover Toyota</a></li>
+                                <li><a class="dropdown-item fw-bold li-c" href="#"><img src="/images/ToyotaLogo.svg"
+                                            style="height: 1em;" class="me-1 tytsvg" alt=""> Let's Go Beyond</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="margin mb-lg-5 border-3 py-5 text-center" id="myDiv">
+            <div class="container">
+                <!-- <h1 class="text-white align-middle">Welcome to Toyota</h1>
+                <p class="lead text-muted">Let's Go Beyond</p>
+                <p>
+                    <a href="#" class="btn btn-danger">Shop now</a>
+                </p> -->
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="text-center display-3" id="Exp">Explore Vehicles</h2>
+            <ul class="nav nav-underline fw-bolder mb-1 justify-content-center navtabs" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active text-dark-emphasis" id="pills-MPV-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-MPV" type="button" role="tab" aria-controls="pills-MPV"
+                        aria-selected="true">MPV</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark-emphasis" id="pills-SUV-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-SUV" type="button" role="tab" aria-controls="pills-SUV"
+                        aria-selected="false">SUV</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark-emphasis" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Hatchback" type="button" role="tab" aria-controls="pills-Hatchback"
+                        aria-selected="false">Hatchbacks</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-MPV" role="tabpanel" aria-labelledby="pills-MPV-tab"
+                    tabindex="0">
+                    <div id="carouselMPV" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="innert">
+                                    <div class="row justify-content-center mt-lg-5">
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild()" onmouseout="setTimeout(showchild, 200)">
+                                                    <img src="/cars/alphard.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide"><span class="fw-bolder">Available
+                                                            Types</span><br>2.5
+                                                        <b>X</b> <br> 2.5 <b>G</b> <br> 2.5 <b>HEV</b></p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Alphard HEV</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price1">Rp1.356.100.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor1()"
+                                                            onmouseout="returnPriceColor1()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor1() {
+                                                    document.getElementById('price1').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor1() {
+                                                    document.getElementById('price1').style.color = "black";
+                                                }
+
+                                                function hidechild() {
+                                                    var hideElements = document.getElementsByClassName('hide');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild() {
+                                                    var hideElements = document.getElementsByClassName('hide');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 1 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild1()" onmouseout="setTimeout(showchild1, 200)">
+                                                    <img src="/cars/innova.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide1"><span class="fw-bolder">Available
+                                                            Types</span><br>
+                                                        <b>G Gasoline</b><br><b>V Gasoline</b> <br><b>G Hybrid</b></p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Kijang Innova Zenix
+                                                            HEV</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price2">Rp471.600.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor2()"
+                                                            onmouseout="returnPriceColor2()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor2() {
+                                                    document.getElementById('price2').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor2() {
+                                                    document.getElementById('price2').style.color = "black";
+                                                }
+
+                                                function hidechild1() {
+                                                    var hideElements = document.getElementsByClassName('hide1');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild1() {
+                                                    var hideElements = document.getElementsByClassName('hide1');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 2 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild2()" onmouseout="setTimeout(showchild2, 200)">
+                                                    <img src="/cars/voxy.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide2"><span class="fw-bolder">Available
+                                                            Types</span><br><b>2.0 CVT</b></p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Voxy</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price3">Rp599.000.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor3()"
+                                                            onmouseout="returnPriceColor3()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor3() {
+                                                    document.getElementById('price3').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor3() {
+                                                    document.getElementById('price3').style.color = "black";
+                                                }
+
+                                                function hidechild2() {
+                                                    var hideElements = document.getElementsByClassName('hide2');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild2() {
+                                                    var hideElements = document.getElementsByClassName('hide2');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="innert">
+                                    <div class="row justify-content-center mt-lg-5">
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild3()" onmouseout="setTimeout(showchild3, 200)">
+                                                    <img src="/cars/avanza.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide3"><span class="fw-bolder">Available
+                                                            Types</span><br><b>E</b> Type <br><b>G</b> Type</p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Avanza</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price4">Rp599.000.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor4()"
+                                                            onmouseout="returnPriceColor4()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor4() {
+                                                    document.getElementById('price4').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor4() {
+                                                    document.getElementById('price4').style.color = "black";
+                                                }
+
+                                                function hidechild3() {
+                                                    var hideElements = document.getElementsByClassName('hide3');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild3() {
+                                                    var hideElements = document.getElementsByClassName('hide3');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 4 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild4()" onmouseout="setTimeout(showchild4, 200)">
+                                                    <img src="/cars/veloz.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide4"><span class="fw-bolder">Available
+                                                            Types</span><br><b>MT</b> <br><b>CVT</b> <br><b>Q CVT</b>
+                                                    </p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Veloz</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price5">Rp288.700.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor5()"
+                                                            onmouseout="returnPriceColor5()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor5() {
+                                                    document.getElementById('price5').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor5() {
+                                                    document.getElementById('price5').style.color = "black";
+                                                }
+
+                                                function hidechild4() {
+                                                    var hideElements = document.getElementsByClassName('hide4');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild4() {
+                                                    var hideElements = document.getElementsByClassName('hide4');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 5 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild5()" onmouseout="setTimeout(showchild5, 200)">
+                                                    <img src="/cars/calya.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide5"><span class="fw-bolder">Available
+                                                            Types</span><br><b>E</b> Type <br><b>G</b> Type</p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">New Calya</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price6">Rp164.700.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor6()"
+                                                            onmouseout="returnPriceColor6()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor6() {
+                                                    document.getElementById('price6').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor6() {
+                                                    document.getElementById('price6').style.color = "black";
+                                                }
+
+                                                function hidechild5() {
+                                                    var hideElements = document.getElementsByClassName('hide5');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild5() {
+                                                    var hideElements = document.getElementsByClassName('hide5');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev overflow-hidden my-auto" type="button"
+                            data-bs-target="#carouselMPV" style="max-height: 20em; max-width: 2em;"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next overflow-hidden my-auto" type="button"
+                            data-bs-target="#carouselMPV" style="max-height: 20em; max-width: 2em;"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="d-flex justify-content-center mb-lg-5">
+                        <button class=" btn border-2 btn-outline-dark rounded-5 fw-bolder" style="width: 70%;"
+                            id="more">More</button></div>
+                </div>
+                <!-- MPV -->
+                <div class="tab-pane fade" id="pills-SUV" role="tabpanel" aria-labelledby="pills-SUV-tab" tabindex="0">
+                    <div id="carouselSUV" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="innert">
+                                    <div class="row justify-content-center mt-lg-5">
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild()" onmouseout="setTimeout(showchild, 200)">
+                                                    <img src="/cars/BZ4x.png"
+                                                        style="min-height: 237px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide"><span class="fw-bolder">Available
+                                                            Types</span><br><b>BZ4X</b></p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New BZ4X BEV</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price7">Rp1.190.000.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor7()"
+                                                            onmouseout="returnPriceColor7()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor7() {
+                                                    document.getElementById('price7').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor7() {
+                                                    document.getElementById('price7').style.color = "black";
+                                                }
+
+                                                function hidechild() {
+                                                    var hideElements = document.getElementsByClassName('hide');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild() {
+                                                    var hideElements = document.getElementsByClassName('hide');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 1 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild1()" onmouseout="setTimeout(showchild1, 200)">
+                                                    <img src="/cars/LC.png" style="max-height: 237px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide1"><span class="fw-bolder">Available
+                                                            Types</span><br>
+                                                        <b>G Gasoline</b><br><b>VX-R</b> <br><b>GR-S</b></p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Land Cruiser</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price8">Rp2.485.800.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor8()"
+                                                            onmouseout="returnPriceColor8()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor8() {
+                                                    document.getElementById('price8').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor8() {
+                                                    document.getElementById('price8').style.color = "black";
+                                                }
+
+                                                function hidechild1() {
+                                                    var hideElements = document.getElementsByClassName('hide1');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild1() {
+                                                    var hideElements = document.getElementsByClassName('hide1');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 2 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild2()" onmouseout="setTimeout(showchild2, 200)">
+                                                    <img src="/cars/RAV4.webp"
+                                                        style="max-height: 237px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide2"><span class="fw-bolder">Available
+                                                            Types</span><br><b>RAV4 GR Sport PHEV</b></p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New RAV4 GR SPORT PHEV
+                                                        </h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price9">Rp1.150.000.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor9()"
+                                                            onmouseout="returnPriceColor9()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor9() {
+                                                    document.getElementById('price9').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor9() {
+                                                    document.getElementById('price9').style.color = "black";
+                                                }
+
+                                                function hidechild2() {
+                                                    var hideElements = document.getElementsByClassName('hide2');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild2() {
+                                                    var hideElements = document.getElementsByClassName('hide2');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="innert">
+                                    <div class="row justify-content-center mt-lg-5">
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild3()" onmouseout="setTimeout(showchild3, 200)">
+                                                    <img src="/cars/Corolla Cross.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide3"><span class="fw-bolder">Available
+                                                            Types</span><br><b>Hybrid GR</b> Type <br><b>Hybrid</b> Type
+                                                    </p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Corolla Cross</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price10">Rp599.000.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor10()"
+                                                            onmouseout="returnPriceColor10()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor10() {
+                                                    document.getElementById('price10').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor10() {
+                                                    document.getElementById('price10').style.color = "black";
+                                                }
+
+                                                function hidechild3() {
+                                                    var hideElements = document.getElementsByClassName('hide3');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild3() {
+                                                    var hideElements = document.getElementsByClassName('hide3');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 4 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild4()" onmouseout="setTimeout(showchild4, 200)">
+                                                    <img src="/cars/RUSH GR.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide4"><span class="fw-bolder">Available
+                                                            Types</span><br><b>GR Sport</b> Type <br><b>G</b> Type</p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">All New Rush GR Sport</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price11">Rp288.700.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor11()"
+                                                            onmouseout="returnPriceColor11()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor11() {
+                                                    document.getElementById('price11').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor11() {
+                                                    document.getElementById('price11').style.color = "black";
+                                                }
+
+                                                function hidechild4() {
+                                                    var hideElements = document.getElementsByClassName('hide4');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild4() {
+                                                    var hideElements = document.getElementsByClassName('hide4');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- card 5 ends -->
+                                        <div class="card mb-3 " style="max-width: 440px; min-height: 260px;" id="cards">
+                                            <div class="row g-0 mx-auto">
+                                                <div class="col-md-4 overflow-hidden" id="itemImg"
+                                                    onmouseover="hidechild5()" onmouseout="setTimeout(showchild5, 200)">
+                                                    <img src="/cars/Fortuner GR.png"
+                                                        style="min-height: 170px; max-width: 400px;"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                                <div class="col-md-8 my-auto text-wrap">
+                                                    <p class="card-title ms-4 hide5"><span class="fw-bolder">Available
+                                                            Types</span><br><b>GR Sport</b> Type <br><b>VRZ</b> Type
+                                                        <br><b>G</b> Type</p>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-4">New Fortuner GR Sport</h5>
+                                                        <p class="card-text">Starting From</p>
+                                                        <p class="price fw-bolder mb-4" id="price12">Rp164.700.000</p>
+                                                        <button href="#"
+                                                            class="explore btn border-2 btn-outline-dark rounded-5 fw-bolder"
+                                                            onmouseover="changePriceColor12()"
+                                                            onmouseout="returnPriceColor12()">Explore</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script>
+                                                function changePriceColor12() {
+                                                    document.getElementById('price12').style.color =
+                                                        "red"; // change color to red when the explore button is hovered
+                                                }
+
+                                                function returnPriceColor12() {
+                                                    document.getElementById('price12').style.color = "black";
+                                                }
+
+                                                function hidechild5() {
+                                                    var hideElements = document.getElementsByClassName('hide5');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "none";
+                                                    }
+                                                }
+
+                                                function showchild5() {
+                                                    var hideElements = document.getElementsByClassName('hide5');
+                                                    for (var i = 0; i < hideElements.length; i++) {
+                                                        hideElements[i].style.display = "block";
+
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev overflow-hidden my-auto" type="button"
+                            data-bs-target="#carouselSUV" style="max-height: 20em; max-width: 2em;"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next overflow-hidden my-auto" type="button"
+                            data-bs-target="#carouselSUV" style="max-height: 20em; max-width: 2em;"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="d-flex justify-content-center mb-lg-5">
+                        <button class=" btn border-2 btn-outline-dark rounded-5 fw-bolder" style="width: 70%;"
+                            id="more">More</button></div>
+                </div>
+                <!-- SUV -->
+                <div class="tab-pane fade" id="pills-Hatchback" role="tabpanel" aria-labelledby="pills-Hatchback-tab"
+                    tabindex="0"></div>
+            </div>
+
+
+        </section>
+        <section class="container mt-lg-5 d-flex justify-content-center" id="featured">
+            <div class=" flex-row">
+                <div class="col-md-4" >
+                    
+                </div>
+                <div class="d-flex flex-row col-md-4" id="moi">
+                    <div>
+                        <img class="border rounded-5 me-lg-4" src="/images/hilux.webp" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-start display-4">Featured</h1>
+                        <p class="fs-6 text-start">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sunt quibusdam voluptates,
+                            enim debitis qui non omnis similique nisi quod labore iste nesciunt et rem adipisci ab? Quo
+                            ut molestias nobis nihil molestiae tempore odio cumque, officia fugiat ipsa eius
+                            exercitationem sunt autem voluptates recusandae placeat commodi. Enim, repellendus quam?
+                            Voluptatibus eum hic soluta reiciendis. Nesciunt!
+                        </p>
+                        <button class="btn btn-outline-dark rounded-pill border-2 arrow"><span>Learn
+                                More</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-xl-5">
+            <form class="d-flex mx-auto row" style="width: 60em;" role="search">
+                <div>
+                    <h2 class="fw-bold">Didn't find your choice?</h2>
+                </div>
+                <div class="d-flex">
+                    <input class="search-car form-control me-2 border-3 bg-dark-emphasis" type="search"
+                        placeholder="Search For Car..." aria-label="Search" placeholder="Search For Car..." pla>
+                    <button class="btn btn-secondary" type="#"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+            <h5 class="fs-5 text-primary text-opacity-50 fw-bold text-center mt-lg-3 text-body-tertiary">Shopping Tools
+            </h5>
+            <div class="d-flex justify-content-center column-gap-3 mt-lg-4">
+                <div class="">
+                    <div class="card-body border-end border-3 border-dark border-opacity-10 pe-3 ">
+                        <h5 class="card-title fw-bold shopping-tools">Price List</h5>
+
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card-body border-end border-3 border-dark border-opacity-10 pe-3">
+                        <h5 class="card-title fw-bold shopping-tools">Search Inventory</h5>
+
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card-body border-end border-3 border-dark border-opacity-10 pe-3">
+                        <h5 class="card-title fw-bold shopping-tools">Car Compare</h5>
+
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card-body border-end border-3 border-dark border-opacity-10 pe-3">
+                        <h5 class="card-title fw-bold shopping-tools">Local Specials</h5>
+
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card-body pe-3">
+                        <h5 class="card-title fw-bold shopping-tools">Find A Dealer</h5>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to deliver exceptional customer satisfaction through safe and dependable vehicles.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Our Vision</h2>
+                    <p>Our vision is to be the global leader in the automotive industry.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Our Values</h2>
+                    <p>We believe in innovation, continuous improvement, and striving for excellence.</p>
+                </div>
+            </div>
+        </section> -->
+
+
+    </main>
+
+    <footer class="bg-dark text-white py-3 mt-lg-5 ">
+        <div class="d-flex container mx-auto justify-content-center text-nowrap mt-lg-5">
+            <div class="row column-gap-3">
+                <div class="col">
+                    <h6>Beyond Solution</h6>
+<pre>Toyota Spektakuler
+Toyota EZ Deal
+Kinto
+Toyota Financial Service
+Get Your Offer
+Toyota Trade In
+Form Inquiry
+Pricelist</pre>
+                </div>
+                <div class="col">
+                    <h6>Beyond Experience</h6>
+                    <pre>
+E-brochure
+Toyota Live Showroom
+Toyota Interactive Virtual Assistant
+Toyota Official Store Solution
+Find Dealer
+Booking Service
+Aftersales
+Toyota Mobile Service
+T-Care
+mToyota
+Toyota Genuine Accessories
+Special Service Campaign</pre>
+                </div>
+                <div class="col">
+                    <h6>Beyond Technology</h6>
+                    <pre>
+T-intouch
+Toyota Safety Sense
+TNGA
+Engine
+Android Auto
+                    </pre>
+                </div>
+                <div class="col">
+                    <h6>Beyond Sustainability</h6>
+                    <pre>
+ITFE
+Toyota Berbagi
+                    </pre>
+                </div>
+                <div class="col">
+                    <h6>More</h6>
+                    <pre>
+Pressroom
+Owners Manual
+News & Information
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <div class="text-center fw-bolder mt-lg-5 justify-content-center">Join Us On
+            <br>
+            <div class="fs-5 mt-lg-3"><i class="fa-brands fa-whatsapp me-2 fs-5"></i> <i class="fa-brands fa-facebook-f me-2 fs-5"></i> <i class="fa-brands fa-instagram me-2 fs-5"></i> <i class="fa-brands fa-x-twitter me-2 fs-5"></i> <i class="fa-brands fa-youtube me-2 fs-5"></i> <i class="fa-brands fa-tiktok fs-5"></i></div>
+        </div>
+        <div class="d-flex justify-content-center column-gap-3 mt-lg-4 ms-lg-4">
+            <div class="">
+                <div class="card-body border-end border-3 border-light border-opacity-10 pe-3 ">
+                    <h5 class="card-title shopping-tools gre">Price List</h5>
+
+                </div>
+            </div>
+            <div class="">
+                <div class="card-body border-end border-3 border-light border-opacity-10 pe-3 ">
+                    <h5 class="card-title shopping-tools gre">Search Inventory</h5>
+
+                </div>
+            </div>
+            <div class="">
+                <div class="card-body ">
+                    <h5 class="card-title shopping-tools gre">Car Compare</h5>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <script>
+        var typed = new Typed(".search-car", {
+            strings: ["Corolla 2018...", "Best SUV...", "Hatchbacks for 5..."],
+            typeSpeed: 80,
+            backSpeed: 20,
+            showCursor: true,
+            cursorChar: "|",
+            loop: true,
+            contentType: 'html',
+            pauseOnFocus: true,
+        });
+    </script> -->
+</body>
+
+</html>

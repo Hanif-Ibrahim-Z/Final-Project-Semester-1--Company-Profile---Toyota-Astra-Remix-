@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, pre{
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+} 
+.navbar{
+    /* position: fixed;
+    top: 0; */
+    width: 100%;
+}
+section{
+  margin-bottom: 1em;
+}
+#featured{
+  transform: scale(0.92);
+    /* height: auto; */
+    /* width: ; */
+    /* overflow: hidden; */
+}
+#moi img{
+  height: 500px;
+}
+#myDiv {
+    width: 100%;
+    height: 625px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+#toyota{
+    height: 3em;
+    width: 7em;
+}
+.arrow {
+    display: inline-block;
+    text-align: center;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+  
+  .arrow span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .arrow span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.12s;
+  }
+  
+  .arrow:hover span {
+    padding-right: 25px;
+  }
+  
+  .arrow:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.explore{
+  justify-self: center;
+}
+#cards{
+  scale: 0.78;
+  margin-left: -2.5em;
+  margin-right: -2.5em;
+}
+#itemImg{
+transition: 0.5s;
+}
+#itemImg:hover{
+padding-right: 400px;
+
+}
+.price{
+  margin-top: -18px;
+  transition: color 0.3s ease;
+}
+.hey{
+  scale: 0.9;
+}
+.innert{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+#more{
+  margin-top: -2em;
+  margin-bottom: 2em;
+  transition: 0.7s;
+}
+#more:hover{
+  transform: translateY(-6%);
+}
+.search-car{
+  color: rgba(168, 168, 168, 0.751);
+}
+#carouselMPV, #carouselSUV{
+  margin-bottom: 1.7em;
+  margin-top: -20px;
+}
+.li-c{
+  font-size:small;
+}
+.nav-c{
+  font-size:medium;
+}
+.tytsvg{
+  margin-left: -2px;
+}
+.shopping-tools{
+  cursor:pointer;
+  transition: 0.2s;
+}
+.shopping-tools:hover{
+  color: red;
+}
+pre{
+  font-size: small;
+}
+.gre{
+  font-size: x-small;
+  color: rgba(255, 255, 255, 0.564);
+}
+footer i{
+  transition: 0.4s;
+}
+footer i:hover{
+  color: red;
+}
