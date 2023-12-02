@@ -130,6 +130,22 @@ pre{
   font-size: x-small;
   color: rgba(255, 255, 255, 0.564);
 }
+div.GVid{
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  transition: 0.4s;
+}
+div.GVid:hover{
+  height: 470px;
+}
+video{
+  opacity: 1;
+  transition: 0.7s;
+}
+video:hover{
+  opacity: 0.3;
+}
 footer i{
   transition: 0.4s;
 }

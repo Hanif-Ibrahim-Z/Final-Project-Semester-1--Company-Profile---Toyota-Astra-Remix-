@@ -809,26 +809,115 @@
         </section>
         <section class="container mt-lg-5 d-flex justify-content-center" id="featured">
             <div class=" flex-row">
-                <div class="col-md-4" >
+                <!-- <div class="col-md-4" >
                     
-                </div>
-                <div class="d-flex flex-row col-md-4" id="moi">
-                    <div>
-                        <img class="border rounded-5 me-lg-4" src="/images/hilux.webp" alt="">
+                </div> -->
+                <div id="carousel" class="carousel slide ">
+                    <div class="carousel-indicators mx-auto" style="max-width: 10em;">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
                     </div>
-                    <div>
-                        <h1 class="text-start display-4">Featured</h1>
-                        <p class="fs-6 text-start">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sunt quibusdam voluptates,
-                            enim debitis qui non omnis similique nisi quod labore iste nesciunt et rem adipisci ab? Quo
-                            ut molestias nobis nihil molestiae tempore odio cumque, officia fugiat ipsa eius
-                            exercitationem sunt autem voluptates recusandae placeat commodi. Enim, repellendus quam?
-                            Voluptatibus eum hic soluta reiciendis. Nesciunt!
-                        </p>
-                        <button class="btn btn-outline-dark rounded-pill border-2 arrow"><span>Learn
-                                More</span></button>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="d-flex flex-row col-md-4 ps-4 " id="moi">
+                                <div>
+                                    <img class="border rounded-5 me-lg-4" src="/images/hilux.webp" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-start display-4">Featured</h1>
+                                    <p class="fs-6 text-start">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sunt quibusdam
+                                        voluptates,
+                                        enim debitis qui non omnis similique nisi quod labore iste nesciunt et rem
+                                        adipisci ab? Quo
+                                        ut molestias nobis nihil molestiae tempore odio cumque, officia fugiat ipsa eius
+                                        exercitationem sunt autem voluptates recusandae placeat commodi. Enim,
+                                        repellendus quam?
+                                        Voluptatibus eum hic soluta reiciendis. Nesciunt!
+                                    </p>
+                                    <button class="btn btn-outline-dark rounded-pill border-2 arrow"><span>Learn
+                                            More</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card rounded-5 border border-grey overflow-hidden "
+                                style="width: 100%; height: 500px;">
+                                <div class="card-img-top overflow-hidden GVid bg-dark" onmouseover="hideVid()"
+                                    onmouseout="setTimeout(showVid, 400)">
+                                    <video style="width: 100%;" muted autoplay loop>
+                                        <source src="/videos/Toyota Gazoo Racing： Step Out of The Comfort.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                    
+                                </div>
+                                <div class="card-body bg-danger">
+                                    <div class="card-text ms-4">
+                                        <h2 class="fw-bolder fs-1 text-white">Introducing Toyota Gazoo Racing</h2>
+                                        <div class="row">
+                                            <p class="fw-bolder text-light GRtext">TOYOTA GAZOO Racing embodies Toyotaʼs
+                                                commitment to overcoming every limit to make “ever-better” cars. <br>
+
+                                                To forge new technologies and solutions under the extreme conditions of
+                                                motorsports, we will never stop innovating. <br>
+
+                                                We race our cars to push ourselves to learn from the toughest
+                                                challenges. <br>
+
+                                                Competing on every kind of road, no matter what the challenge, Inspires
+                                                us to build “ever-better” cars. Weʼre engineering Toyotaʼs future DNA.
+
+                                                <br><br> Weʼll keep competing to bring the freedom, adventure and joy of
+                                                driving to everyone. <button
+                                                class="shadow-lg float-end btn btn-outline-light rounded-pill border-2 arrow fw-bolder"
+                                                style="width: 10em; margin-right: 3em;">Learn More</button></p>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    function hideVid() {
+                                        var hideElements = document.getElementsByClassName('GRtext');
+                                        for (var i = 0; i < hideElements.length; i++) {
+                                            hideElements[i].style.display = "none";
+                                        }
+                                    }
+
+
+
+                                    function showVid() {
+                                        var hideElements = document.getElementsByClassName('GRtext');
+                                        for (var i = 0; i < hideElements.length; i++) {
+                                            hideElements[i].style.display = "block";
+
+                                        }
+                                    }
+
+                                    // function heightSet() {
+                                    //     var myDiv = document.getElementById('myDiv');
+                                    //     myDiv.style.height = '470px';
+                                    // }
+                                </script>
+                            </div>
+                        </div>
                     </div>
+                    <button class="carousel-control-prev overflow-hidden my-auto" type="button"
+                            data-bs-target="#carousel" style="max-height: 20em; max-width: 2em;"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next overflow-hidden my-auto" type="button"
+                            data-bs-target="#carousel" style="max-height: 20em; max-width: 2em;"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </button>
                 </div>
+
             </div>
         </section>
         <section class="my-xl-5">
@@ -903,7 +992,7 @@
             <div class="row column-gap-3">
                 <div class="col">
                     <h6>Beyond Solution</h6>
-<pre>Toyota Spektakuler
+                    <pre>Toyota Spektakuler
 Toyota EZ Deal
 Kinto
 Toyota Financial Service
@@ -957,7 +1046,10 @@ News & Information
         </div>
         <div class="text-center fw-bolder mt-lg-5 justify-content-center">Join Us On
             <br>
-            <div class="fs-5 mt-lg-3"><i class="fa-brands fa-whatsapp me-2 fs-5"></i> <i class="fa-brands fa-facebook-f me-2 fs-5"></i> <i class="fa-brands fa-instagram me-2 fs-5"></i> <i class="fa-brands fa-x-twitter me-2 fs-5"></i> <i class="fa-brands fa-youtube me-2 fs-5"></i> <i class="fa-brands fa-tiktok fs-5"></i></div>
+            <div class="fs-5 mt-lg-3"><i class="fa-brands fa-whatsapp me-2 fs-5"></i> <i
+                    class="fa-brands fa-facebook-f me-2 fs-5"></i> <i class="fa-brands fa-instagram me-2 fs-5"></i> <i
+                    class="fa-brands fa-x-twitter me-2 fs-5"></i> <i class="fa-brands fa-youtube me-2 fs-5"></i> <i
+                    class="fa-brands fa-tiktok fs-5"></i></div>
         </div>
         <div class="d-flex justify-content-center column-gap-3 mt-lg-4 ms-lg-4">
             <div class="">
